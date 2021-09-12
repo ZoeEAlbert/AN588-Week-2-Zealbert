@@ -1,0 +1,99 @@
+---
+title: "Zealbert_OriginalHomeworkCode_01 "
+author: "Zoe Albert"
+date: "9/12/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+#Challenge One
+```{r}
+v<-c("Stately,","plump","Buck","Mulligan", "came","from","the","stairhead,","bearing","a", "bowl","of","lather","on","which","a","mirror", "and","a","razor","lay","crossed")
+#this is a vector of srings from the first line of Ulysses.
+v[seq(from = 1 , to = 22, by = 3)]
+#Every third element of above vector.
+```
+#Challenge Two
+```{r}
+m <- matrix(data = 1:80, nrow = 8, ncol = 10, byrow = FALSE)
+m
+x <- m[,2:3]
+x
+# I cannot figure out how to get column 6. I can only do 2 and 3 becuase they are next to each other. 
+x <-m [6:8,]
+x
+#The 6th to 8th row of the matrix. 
+x <-m [2:6,2:9]
+x
+#The elements from row 2:column 2 to row 6:column 9.
+```
+#Challenge Three
+```{r}
+a <- array(data = 400:1, dim = c(5, 5, 4, 4))
+a
+#A 4D 400 element array.
+a[1, 1, 1, 2]
+a[2, 3, 2, ]
+a[1:5, 1:5, 3, 3]
+#3 returns from said matrix. 
+```
+#Challenge Four
+```{r}
+Lemuroidea <- c("Cheirogaleidae", "Lepilemuridae", "Indriidae", "Lemuridae",
+    "Daubentoniidae")
+Lorisoidea <- c("Lorisidae", "Galagidae")
+Strepsirhini <- list(Lemuroidea, Lorisoidea)
+names(Strepsirhini) <- list("Lemuroidea", "Lorisoidea")
+Strepsirhini
+#List of Strepsirhini primates. 
+Platyrrhini <- c("Cebidae", "Atelidae", "Pitheciidae")
+Catarrhini <- c("Cercopithecidae", "Hylobatidae", "Hominidae")
+Anthropoidea <- list(Platyrrhini, Catarrhini)
+names(Anthropoidea) <- list("Platyrrhini", "Catarrhini")
+Anthropoidea
+#Anthropoidea, a subset of Haplorhini 
+Tarsioidea <- c("Tarsiidae")
+Tarsioidea <- c("Tarsiidae")
+names(Tarsioidea) <- list("Tarsiidae")
+Tarsioidea
+#Tarsioidea, a subset of Haplorhini
+Haplorhini <- c("Anthropoidea","Tarsioidea")
+Haplorhini <- list(Anthropoidea, Tarsioidea)
+names(Haplorhini) <- list("Haplorhini")
+Haplorhini
+#Haplorhini 
+Primates <- c("Haplorhini", "Strepsirhini")
+Primates <- list(Haplorhini, Strepsirhini)
+names(Primates) <- list("Haplorhini", "Strepsirhini")
+Primates
+#List of all primates
+```
+#Challenge Five
+```{r}
+m3 <- matrix(data = c(3, 0, 1 ,23, 1, 2, 33, 1, 1, 42, 0, 1, 41, 0, 2), nrow = 5, ncol = 3, byrow = TRUE)
+m3
+#5x3 Row Wise Matrix
+# I need help with Data Frames. 
+```
