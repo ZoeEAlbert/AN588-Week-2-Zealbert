@@ -42,7 +42,7 @@ m
 x <- m[,c(2,3,6)]
 x
 
-## I struggled to figure out how to get column 6. I can only do 2 and 3 because they are next to each other. 
+## 2nd, 3rd and 6th column. 
 x <-m [6:8,]
 x
 ##The 6th to 8th row of the matrix. 
@@ -102,10 +102,10 @@ df3
 ## Now the matrix is a data frame. 
 df3[,2] = as.logical(df3[,2])
 df3
-## Second column is now logical valued.  I am unsure of what this really means. 
+## Second column is now logical valued.
 df3[,3] = as.factor(df3[,3])
 df3
-## Third column is now factor valued.  I am also unsure of what this really means. 
+## Third column is now factor valued.
 str(df3)
 ##Date type in data frame. 
 ## I need help with Data Frames. 
@@ -113,6 +113,6 @@ str(df3)
 
 ## Challenges During Homework
 ## I struggled throughout, as this was a big learning curve, but was elated each time I figured something out.  At the start of the excercize, my main struggles were related to simple things like using ' instead of ` to deliniate a chunk.  A lot of this was figured out with trial and error, as well as google.  
-## I had a hard time in challenge two, figuring out how to include a column that wasn't next to the other two columns.  This was potentially figured out via google, but I am going to go to office hours to discuess.  
+## I had a hard time in challenge two, figuring out how to include a column that wasn't next to the other two columns.  This was potentially figured out via google and was deffinitly figured out during office hours.  
 ## I struggled with how many words were a part of challenge four, in that I had a hard time keeping track as I went back and forth.  I am still unsure if there is an easier way to keep track.  
-## I think I struggled the most with challenge five. I need help figuring out data frames. 
+## I think I struggled the most with challenge five. I need help figuring out data frames.  Once my textbook arives, I will be better off!
