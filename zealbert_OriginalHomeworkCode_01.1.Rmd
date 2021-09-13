@@ -33,13 +33,13 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 v<-c("Stately,","plump","Buck","Mulligan", "came","from","the","stairhead,","bearing","a", "bowl","of","lather","on","which","a","mirror", "and","a","razor","lay","crossed")
 ##this is a vector of stings from the first line of Ulysses.
 v[seq(from = 1 , to = 22, by = 3)]
-##Every third element of above vector.  This is something different from the hint, but I belive it still works. 
+##Every third element of above vector.  This is something different from the hint, but I believe it still works. 
 ```
 ##Challenge Two
 ```{r}
 m <- matrix(data = 1:80, nrow = 8, ncol = 10, byrow = FALSE)
 m
-x <- c(m[,2],m[,3],m[,6])
+x <- m[,c(2,3,6)]
 x
 
 ## I struggled to figure out how to get column 6. I can only do 2 and 3 because they are next to each other. 
@@ -90,6 +90,7 @@ Primates <- list(Haplorhini, Strepsirhini)
 names(Primates) <- list("Haplorhini", "Strepsirhini")
 Primates
 ##List of all primates
+##Feels Overwhelming.  Is there an easier way?
 ```
 ##Challenge Five
 ```{r}
