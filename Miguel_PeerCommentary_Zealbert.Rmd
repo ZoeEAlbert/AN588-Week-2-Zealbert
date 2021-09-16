@@ -1,0 +1,153 @@
+---
+title: "Miguel_PeerCommentary_Zealbert_01"
+output: html_document
+
+##Challenge One
+```{r}
+v<-c("Stately,","plump","Buck","Mulligan", "came","from","the","stairhead,","bearing","a", "bowl","of","lather","on","which","a","mirror", "and","a","razor","lay","crossed")
+##this is a vector of stings from the first line of Ulysses.
+v[seq(from = 1 , to = 22, by = 3)]
+##Every third element of above vector.  This is something different from the hint, but I believe it still works.
+```
+
+```{r}
+#Miguel: That is a really efficient way to do it! As I told you in the office hour, I think it is the fastest way. I will add the "by" trick to my own code and keep it in mind for future challenges! :)
+```
+
+
+##Challenge Two
+```{r}
+m <- matrix(data = 1:80, nrow = 8, ncol = 10, byrow = FALSE)
+m
+x <- m[,c(2,3,6)]
+x
+
+## 2nd, 3rd and 6th column. 
+x <-m [6:8,]
+x
+##The 6th to 8th row of the matrix. 
+x <-m [2:6,2:9]
+x
+##The elements from row 2:column 2 to row 6:column 9.
+```
+
+```{r}
+#Miguel: Perfect. I would not change anything.
+```
+
+
+##Challenge Three
+```{r}
+a <- array(data = 400:1, dim = c(5, 5, 4, 4))
+a
+##A 4D 400 element array.
+a[1, 1, 1, 2]
+a[2, 3, 2, ]
+a[1:5, 1:5, 3, 3]
+##3 returns from said matrix. 
+```
+
+```{r}
+#Miguel: I am not sure about it and maybe it is not necessary, but as in challenge 3 it asks <Given this matrix, what would the following return?> you might want to give a little description/explanation of the result of the running.
+
+```
+
+
+##Challenge Four
+```{r}
+Lemuroidea <- c("Cheirogaleidae", "Lepilemuridae", "Indriidae", "Lemuridae",
+    "Daubentoniidae")
+Lorisoidea <- c("Lorisidae", "Galagidae")
+Strepsirhini <- list(Lemuroidea, Lorisoidea)
+names(Strepsirhini) <- list("Lemuroidea", "Lorisoidea")
+Strepsirhini
+##List of Strepsirhini primates. 
+Platyrrhini <- c("Cebidae", "Atelidae", "Pitheciidae")
+Catarrhini <- c("Cercopithecidae", "Hylobatidae", "Hominidae")
+Anthropoidea <- list(Platyrrhini, Catarrhini)
+names(Anthropoidea) <- list("Platyrrhini", "Catarrhini")
+Anthropoidea
+##Anthropoidea, a subset of Haplorhini 
+Tarsioidea <- c("Tarsiidae")
+Tarsioidea <- c("Tarsiidae")
+
+```{r}
+#Miguel: I think this one above is repeated.
+```
+
+```{r}
+names(Tarsioidea) <- list("Tarsiidae")
+Tarsioidea
+##Tarsioidea, a subset of Haplorhini
+
+```
+
+```{r}
+
+#Miguel: I am not sure, but I think it is not necessary to name vectors with the function "name()" because you are already giving it a name when writing "something<-c()".
+```
+
+```{r}
+Haplorhini <- c("Anthropoidea","Tarsioidea")
+Haplorhini <- list(Anthropoidea, Tarsioidea)
+names(Haplorhini) <- list("Haplorhini")
+Haplorhini
+##Haplorhini 
+Primates <- c("Haplorhini", "Strepsirhini")
+Primates <- list(Haplorhini, Strepsirhini)
+names(Primates) <- list("Haplorhini", "Strepsirhini")
+Primates
+##List of all primates
+
+```
+
+```{r}
+#Miguel: I think you do not need to set a vector for "Haplorhini" or "primates". I would say that setting the list is enough, like you did with "Anthropoidea".
+```
+
+```{r}
+##Feels Overwhelming.  Is there an easier way?
+```
+
+```{r}
+#Miguel: I think we do not know by the moment a function or a method to do it more efficient, you did a good job!
+```
+
+##Challenge Five
+```{r}
+m3 <- matrix(data = c(3, 0, 1 ,23, 1, 2, 33, 1, 1, 42, 0, 1, 41, 0, 2), nrow = 5, ncol = 3, byrow = TRUE)
+m3
+##5x3 Row Wise Matrix
+df3 <- as.data.frame(m3)
+df3
+## Now the matrix is a data frame. 
+df3[,2] = as.logical(df3[,2])
+df3
+## Second column is now logical valued.
+
+```{r}
+#Miguel: I did it this way: "as.logical(df3[,2])". I am not sure about the difference, but yours seem to be great! If you know your way is better for any reason please tell me!
+```
+
+```{r}
+df3[,3] = as.factor(df3[,3])
+df3
+## Third column is now factor valued.
+str(df3)
+##Date type in data frame. 
+## I need help with Data Frames. 
+```
+```{r}
+#Miguel: I think you did pretty well!
+```
+
+```{r}
+#Miguel: Nice job! Your coding is easy to follow and well indicated. I could notice you did a big effort and it was worthy!
+```
+
+
+## Challenges During Homework
+## I struggled throughout, as this was a big learning curve, but was elated each time I figured something out.  At the start of the excercize, my main struggles were related to simple things like using ' instead of ` to deliniate a chunk.  A lot of this was figured out with trial and error, as well as google.  
+## I had a hard time in challenge two, figuring out how to include a column that wasn't next to the other two columns.  This was potentially figured out via google and was deffinitly figured out during office hours.  
+## I struggled with how many words were a part of challenge four, in that I had a hard time keeping track as I went back and forth.  I am still unsure if there is an easier way to keep track.  
+## I think I struggled the most with challenge five. I need help figuring out data frames.  Once my textbook arives, I will be better off!
