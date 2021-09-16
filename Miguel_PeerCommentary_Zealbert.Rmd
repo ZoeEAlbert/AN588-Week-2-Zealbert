@@ -142,7 +142,7 @@ str(df3)
 ```
 
 ```{r}
-#Miguel: Nice job! Your coding is easy to follow and well indicated. I could notice you did a big effort and it was worthy!
+#Miguel: Nice job! Your coding is easy to follow and well indicated. I could notice you did a big effort and it was worthy! :)
 ```
 
 
